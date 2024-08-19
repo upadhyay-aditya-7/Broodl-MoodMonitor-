@@ -17,7 +17,7 @@ export default function Login() {
 
   async function handleSubmit() {
     if(!email || !password || password.length < 6) {
-      return
+      return console.log("Something's missing");
     } 
     setAuthenticating(true)
     try{
